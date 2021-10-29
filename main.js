@@ -3,7 +3,9 @@ function main(){
     if (query.matches){
         document.querySelector('#button2').addEventListener('click', btn3)
         var newUrl1 = ""
-
+        
+ // this if statement makes the buttons work according to the media query
+//  btn3 is the same as btn2 in the else statement
         function btn3(){
             document.querySelector('#button1').style.boxShadow = "none";
             document.querySelector('#button2').style.boxShadow = "inset 1.2rem 0 0 0 orangered";
@@ -19,6 +21,8 @@ function main(){
             newUrl1 = image2.slice(5, -2).replace(/['"]/g, "");
         document.querySelector('#button1').addEventListener('click', btn4)
         var url3 = ""
+        
+// btn4 is the same as btn1 in else statement.
         function btn4(){
             document.querySelector('#button2').style.boxShadow = "none";
             document.querySelector('#button1').style.boxShadow = "inset 1.2rem 0 0 0 orangered";
@@ -32,7 +36,7 @@ function main(){
 
             url3 = image3.slice(5, -2).replace(/['"]/g, "");
         }
-
+// These 2 functions below work to change the image file every 4 secs
         function changeImage4(){
             if(url3 == "file:///C:/Coding%20projects%20WEB%20devs/Dads%20website/Intro%20page%20pics/Image%201.jpg" ){
             btn3();
@@ -51,7 +55,7 @@ function main(){
         document.querySelector('#button2').addEventListener('click', btn2)
 
         var newUrl = ""
-
+//  this is the same code as above just works for anything above 768px
         function btn2(){
             document.querySelector('#button1').style.boxShadow = "none";
             document.querySelector('#button2').style.boxShadow = "inset 1.2rem 0 0 0 orangered";
